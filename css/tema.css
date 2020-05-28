@@ -1,0 +1,58 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 60px;
+  background-color: rgb(241,241,241);
+}
+.footer {
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  
+  text-align: center;
+
+  
+  background-color: white;
+  border-top: 1px solid #e2e2e2;
+
+}
+
+/* enable absolute positioning */
+.inner-addon { 
+    position: relative; 
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align icon */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+
+@media screen and (min-width: 320px) {
+    .footer {
+        padding-top: 35px;
+        height: 100px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .footer {
+        padding-top: 36px;
+        height: 80px;
+    }
+}
